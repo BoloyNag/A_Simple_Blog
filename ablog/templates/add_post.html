@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block title %}
+
+Add new post
+
+{% endblock %}
+
+{% block content %}
+</br>
+
+<style type="text/css">
+h2{text-indent:160px}
+</style>
+
+{% if user.is_authenticated%}
+
+<br/>
+
+<h1>Add New Post</h1>
+
+<br/>
+
+<div class="form-group">
+<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button class="btn btn-secondary">Post</button>
+</div>
+
+{% else %}
+
+    <h2> ACCCESS DENIED!!! PLEASE LOG-IN TO ADD POSTS!!!</h2>	
+
+{% endif %}
+
+{% endblock %}
