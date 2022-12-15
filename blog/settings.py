@@ -25,7 +25,7 @@ SECRET_KEY = 'u4#8ba@2!()=2y-=c*xxf0k2rv-s#3ya(tkrvmihieed^qw+_f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['boloynag.pythonanywhere.com']
 
 
 # Application definition
